@@ -14,6 +14,10 @@ public class MethodParameter {
 	private Object parameterValue;
 	private Annotation[] parameterAnnotations;
 	private MethodParameter[] methodParameters;
+	/**
+	 * 层级 防止关联应用进入死循环 最大不能超过三层深度
+	 */
+	private int level;
 	
 	public Class<?> getParameterType() {
 		return parameterType;
@@ -66,5 +70,12 @@ public class MethodParameter {
 	public void setParameterValue(Object parameterValue) {
 		this.parameterValue = parameterValue;
 	}
+	public int getLevel() {
+		return level;
+	}
+	public void setLevel(int level) {
+		this.level = level;
+	}
+	
 	
 }

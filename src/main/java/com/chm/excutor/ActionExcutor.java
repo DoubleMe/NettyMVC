@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.support.ManagedArray;
 import org.springframework.stereotype.Component;
 
 import com.chm.cache.ActionCache;
@@ -22,24 +23,24 @@ import com.chm.util.BeanUtil;
 
 public class ActionExcutor implements BaseExcutor{
 
+	ParameterManagerImpl manager = new ParameterManagerImpl();
 	
-	
-	public String excutor(Map<String, Object> request){
+	public Object excutor(Map<String, Object> request){
 		
 		String uri = (String)request.get("uri");
 		ActionCompent action = ActionCache.getAction(uri);
-		ParameterManagerImpl manager = new ParameterManagerImpl();
-		manager.buildMethodParameter(request, action);
-		String target = invoke(action);
+		
+		manager.doDispatchParameterName(request, action);
+		Object target = invoke(action);
 		
 		return target;
 	}
 	
-	public String invoke(ActionCompent action){
+	public Object invoke(ActionCompent action){
 		try {
+			Object[] args = manager.buildArgs(action);
 			
-			
-			return (String) action.getHander().invoke(action.getTarget(), null);
+			return  action.getHander().invoke(action.getTarget(), args);
 		} catch (IllegalAccessException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

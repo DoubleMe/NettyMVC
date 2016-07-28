@@ -1,23 +1,13 @@
 package com.chm.action;
 
-import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.lang.reflect.Parameter;
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.annotation.PostConstruct;
-
-import org.springframework.beans.factory.annotation.Autowired;
 
 import com.chm.annotation.RequestMapping;
 import com.chm.cache.ActionCache;
 import com.chm.exception.UrlException;
 import com.chm.model.ActionCompent;
-import com.chm.model.MethodParameter;
-import com.chm.parameter.ParameterManager;
+import com.chm.parameter.impl.ParameterManagerImpl;
 import com.chm.resolver.UrlResolver;
-import com.chm.util.BeanUtil;
 
 /**
  * ACTION基类 所有的ACTION都继承这个类
@@ -28,16 +18,23 @@ import com.chm.util.BeanUtil;
  */
 public abstract class AbstractAction {
 	
-	@Autowired
-	private ParameterManager parameterManager;
+	private ParameterManagerImpl parameterManager = new ParameterManagerImpl();
 	/**
 	 * 向注册中心注册Action 初始化Action方法
 	 * @throws UrlException 
 	 */
+	public AbstractAction(){
+		register();
+	}
 	
-	public void register() throws UrlException{
+	public void register(){
 		if(this.getClass().isAnnotationPresent(RequestMapping.class)){
-			buildAction(this);
+			try {
+				buildAction(this);
+			} catch (UrlException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 	}
 	

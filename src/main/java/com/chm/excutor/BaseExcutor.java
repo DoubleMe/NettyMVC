@@ -9,5 +9,5 @@ public interface BaseExcutor {
 
 	//public String excutor(HttpServletRequest request,HttpServletResponse response);
 	
-	public String excutor(Map<String, Object> request);
+	public Object excutor(Map<String, Object> request);
 }

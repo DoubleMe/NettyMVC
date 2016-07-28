@@ -1,14 +1,18 @@
 package com.chm.parameter.impl;
 
+import java.beans.IntrospectionException;
+import java.beans.PropertyDescriptor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import org.springframework.core.LocalVariableTableParameterNameDiscoverer;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -21,6 +25,8 @@ import com.chm.util.BeanUtil;
 
 @Service("parameterManager")
 public class ParameterManagerImpl implements ParameterManager{
+	
+	 LocalVariableTableParameterNameDiscoverer parameterNameDiscoverer = new LocalVariableTableParameterNameDiscoverer();
 
 	/**
 	 * 构建action方法参数
@@ -29,13 +35,14 @@ public class ParameterManagerImpl implements ParameterManager{
 	 * @return
 	 */
 	public MethodParameter[] buildParameter(Method method) {
+		String[] ParameterNames = parameterNameDiscoverer.getParameterNames(method);
 		Parameter[] params = method.getParameters();
-		List<MethodParameter> parameters = new ArrayList<MethodParameter>();
-		
-		for(Parameter param : params){
-			parameters.add(getMethodParameter(param,method));
+		MethodParameter[] methodParameters = new MethodParameter[params.length];
+		for(int i = 0; i < params.length; i++){
+			methodParameters[i] = getMethodParameter(params[i],ParameterNames[i],method);
 		}
-		return (MethodParameter[])parameters.toArray();
+		
+		return methodParameters;
 	}
 
 	/**
@@ -44,16 +51,17 @@ public class ParameterManagerImpl implements ParameterManager{
 	 * @param method
 	 * @return
 	 */
-	public MethodParameter getMethodParameter(Parameter parameter, Method method) {
+	public MethodParameter getMethodParameter(Parameter parameter,String parameterName, Method method) {
+		
 		MethodParameter methodParameter = new MethodParameter();
 		Class<?> clazz = parameter.getType();
 		methodParameter.setParameterAnnotations(parameter.getAnnotations());
 		methodParameter.setMethod(method);
 		methodParameter.setParameterType(clazz);
-		methodParameter.setParameterName(parameter.getName());
+		methodParameter.setParameterName(parameterName);
 //		methodParameter.setParameterIndex(parameter.);
 		if(!BeanUtil.isBasicTypes(clazz)){
-			methodParameter.setMethodParameters(buildMethodParameter(parameter.getType()));
+			methodParameter.setMethodParameters(buildMethodParameter(parameter.getType(),1));
 		}
 		return methodParameter;
 	}
@@ -63,21 +71,21 @@ public class ParameterManagerImpl implements ParameterManager{
 	 * @param clazz
 	 * @return
 	 */
-	public MethodParameter[] buildMethodParameter(Class<?> clazz) {
-		Field[] fields = clazz.getFields();
-		if(fields.length == 0){
+	public MethodParameter[] buildMethodParameter(Class<?> clazz,int level) {
+		Field[] fields = clazz.getDeclaredFields();
+		if(fields.length == 0 || level >= 3){
 			return null;
 		}
 		MethodParameter[] methodParameters = new MethodParameter[fields.length];
 		
 		for(int index = 0; index < fields.length; index++){
 			Field field = fields[index];
-			MethodParameter methodParameter = methodParameters[index];
-			methodParameter.setParameterName(field.getName());
-			methodParameter.setParameterAnnotations(field.getAnnotations());
-			methodParameter.setParameterType(field.getClass());
-			if(!BeanUtil.isBasicTypes(field.getClass())){
-				methodParameter.setMethodParameters(buildMethodParameter(field.getClass()));
+			methodParameters[index] = new MethodParameter();
+			methodParameters[index].setParameterName(field.getName());
+			methodParameters[index].setParameterAnnotations(field.getAnnotations());
+			methodParameters[index].setParameterType(field.getType());
+			if(!BeanUtil.isBasicTypes(field.getType())){
+				methodParameters[index].setMethodParameters(buildMethodParameter(field.getType(),++level));
 			}
 		}
 		
@@ -91,16 +99,15 @@ public class ParameterManagerImpl implements ParameterManager{
 	 * @throws IllegalAccessException 
 	 * @throws InstantiationException 
 	 */
-	public MethodParameter[] buildMethodParameter(Map<String, Object> request,ActionCompent action) {
+	public MethodParameter[] doDispatchParameterName(Map<String, Object> request,ActionCompent action) {
 		MethodParameter[] methodParameters = action.getParameterTypes();
 		
 		for(Entry<String, Object> entry : request.entrySet()){
+			
 			if(StringUtils.isEmpty(entry.getKey()))continue;
-			for(MethodParameter methodParameter : methodParameters){
-				doDispatchParameterName(entry.getValue(), processParameterName(entry.getKey()), methodParameter, 0);
-			}
+			doDispatchParameterName(entry.getValue(), processParameterName(entry.getKey()), methodParameters, 0);
 		}
-		return null;
+		return methodParameters;
 	}
 	
 	/**
@@ -109,7 +116,7 @@ public class ParameterManagerImpl implements ParameterManager{
 	 * @return
 	 */
 	private String[] processParameterName(String parameterName){
-		return parameterName.split(".");
+		return parameterName.split("\\.");
 	}
 	
 	/**
@@ -119,15 +126,19 @@ public class ParameterManagerImpl implements ParameterManager{
 	 * @param methodParameter
 	 * @param level
 	 */
-	private void doDispatchParameterName(Object requestValue,String[] requestName,MethodParameter methodParameter,int level){
-		if(level == requestName.length){
-			methodParameter.setParameterValue(requestValue);
+	private void doDispatchParameterName(Object requestValue,String[] requestName,MethodParameter[] methodParameters,int level){
+		
+		if(methodParameters == null){
 			return;
 		}
-		if(methodParameter.getMethodParameters() != null){
-			for(MethodParameter parameter : methodParameter.getMethodParameters()){
-				if(parameter.getParameterName().equals(requestName)){
-					doDispatchParameterName(requestValue, requestName, methodParameter, level++);
+		for(MethodParameter methodParameter : methodParameters){
+			//如果当前层级找到匹配字段 并且是最后一个层级就给最后匹配上的参数赋值
+			if(methodParameter.getParameterName().equals(requestName[level])){
+				if((requestName.length -1) == level){
+					methodParameter.setParameterValue(requestValue);
+					return;
+				}else{//当前层级有匹配，寻找下一层级匹配
+					doDispatchParameterName(requestValue, requestName, methodParameter.getMethodParameters(), ++level);
 				}
 			}
 		}
@@ -140,32 +151,84 @@ public class ParameterManagerImpl implements ParameterManager{
 	public Object[] buildArgs(ActionCompent action) {
 		
 		MethodParameter[] methodParameters = action.getParameterTypes();
+		Object[] args = new Object[methodParameters.length];
 		
-		return null;
+		for(int i= 0;i < methodParameters.length; i++){
+			args[i] = getObject(methodParameters[i]);
+		}
+		
+		return args;
 	}
 	
+	/**
+	 * 
+	 * @param obj 要填充数据的对象
+	 * @param methodParameters 对象参数 类型、字段名、字段值
+	 * @return
+	 */
+	private Object getObject(Object obj,MethodParameter[] methodParameters){
+		if(methodParameters == null || methodParameters.length == 0){
+			return obj;
+		}
+		for(MethodParameter parameter : methodParameters){
+			//获取对应的set方法
+			String methodName = getSetMethodName(parameter.getParameterName());
+			try {
+				Class<?> clazz = parameter.getParameterType();
+				
+				Method method = obj.getClass().getMethod(methodName, clazz);
+				Object parameterValue = null;
+				if(!BeanUtil.isBasicTypes(clazz)){
+					Object param = clazz.newInstance();
+					parameterValue = getObject(param, parameter.getMethodParameters());
+				}else{
+					parameterValue = parameter.getParameterValue();
+				}
+				method.invoke(obj, parameterValue);
+			  
+			} catch (NoSuchMethodException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (SecurityException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IllegalAccessException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IllegalArgumentException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (InvocationTargetException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (InstantiationException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+		return obj;
+	}
+	
+	/**
+	 * MethodParameter 转换为一个对象
+	 * @param methodParameter
+	 * @return
+	 */
 	public Object getObject(MethodParameter methodParameter){
 		try {
 			Object obj = methodParameter.getParameterType().newInstance();
-			if(methodParameter.getParameterValue() != null){
-				if(BeanUtil.isBasicTypes(methodParameter.getParameterType())){
-					obj = methodParameter.getParameterValue();
-				}
+			
+			if(BeanUtil.isBasicTypes(methodParameter.getParameterType())){
+				obj = methodParameter.getParameterValue();
 			}else{//不是基本类型。并且有字段,调用反射将值注入
-				if(methodParameter.getMethodParameters() != null){
-					for(MethodParameter parameter : methodParameter.getMethodParameters()){
-						Method moethd = obj.getClass().getMethod(getSetMethodName(parameter.getParameterName()), parameter.getParameterType());
-						moethd.invoke(obj, parameter.getParameterValue());
-					}
-				}
+				getObject(obj, methodParameter.getMethodParameters());
 			}
+			return obj;
 		} catch (InstantiationException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (NoSuchMethodException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (SecurityException e) {
@@ -174,10 +237,7 @@ public class ParameterManagerImpl implements ParameterManager{
 		} catch (IllegalArgumentException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} catch (InvocationTargetException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		} 
 		
 		return null;
 	}
@@ -188,13 +248,8 @@ public class ParameterManagerImpl implements ParameterManager{
 		return "set"+temp;
 	}
 	
-	public static void main(String[] args) throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
-		
-		ParameterManagerImpl impl = new ParameterManagerImpl();
-		Object test = new Test();
-		Method method = test.getClass().getMethod(impl.getSetMethodName("name"), String.class);
-		method.invoke(test, "nihao");
-		
-		System.out.println(((Test)test).getName());
+	public static void main(String[] args) throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, IntrospectionException {
+		String[] test = "test.name".split(".");
+		System.out.println(test.length);
 	}
 }

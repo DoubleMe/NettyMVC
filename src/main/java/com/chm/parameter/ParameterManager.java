@@ -12,11 +12,11 @@ public interface ParameterManager {
 
 	public MethodParameter[] buildParameter(Method method);
 	
-	public MethodParameter getMethodParameter(Parameter parameter,Method method);
+	public MethodParameter getMethodParameter(Parameter parameter,String parameterName,Method method);
 	
-	public MethodParameter[] buildMethodParameter(Class<?> clazz);
+	public MethodParameter[] buildMethodParameter(Class<?> clazz,int level);
 	
-	public MethodParameter[] buildMethodParameter(Map<String, Object> request,ActionCompent action);
+	public MethodParameter[] doDispatchParameterName(Map<String, Object> request,ActionCompent action);
 	
 	public Object[] buildArgs(ActionCompent action);
 	
