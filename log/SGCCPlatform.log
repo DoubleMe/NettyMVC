@@ -1,0 +1,1430 @@
+2016-08-01 09:05:57  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@27c20538: startup date [Mon Aug 01 09:05:57 CST 2016]; root of context hierarchy
+2016-08-01 09:05:57  [ main:61 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 09:05:58  [ main:726 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 09:06:06  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@27c20538: startup date [Mon Aug 01 09:06:06 CST 2016]; root of context hierarchy
+2016-08-01 09:06:06  [ main:63 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 09:06:07  [ main:552 ] - [ INFO ]  启动netty客服端。。。,port={8080}
+2016-08-01 09:07:50  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@27c20538: startup date [Mon Aug 01 09:07:50 CST 2016]; root of context hierarchy
+2016-08-01 09:07:50  [ main:62 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 09:07:50  [ main:527 ] - [ INFO ]  启动netty客服端。。。,port={8080}
+2016-08-01 10:34:07  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 10:34:07 CST 2016]; root of context hierarchy
+2016-08-01 10:34:07  [ main:57 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 10:34:07  [ main:511 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 11:34:49  [ nioEventLoopGroup-3-6:3641673 ] - [ WARN ]  Failed to initialize a channel. Closing: [id: 0x16a6f90d, L:/127.0.0.1:8080 - R:/127.0.0.1:50569]
+java.lang.Error: Unresolved compilation problems: 
+	The import com.telek cannot be resolved
+	request cannot be resolved to a variable
+	request cannot be resolved
+	HTTP_1_1 cannot be resolved to a variable
+	OK cannot be resolved to a variable
+	CONTENT_TYPE cannot be resolved to a variable
+	CONTENT_LENGTH cannot be resolved to a variable
+	request cannot be resolved to a variable
+	CONNECTION cannot be resolved to a variable
+	Values cannot be resolved to a variable
+
+	at com.chm.hander.NettyServerHander.<init>(NettyServerHander.java:4)
+	at com.chm.server.NettyServerManager$1.initChannel(NettyServerManager.java:50)
+	at com.chm.server.NettyServerManager$1.initChannel(NettyServerManager.java:1)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:68)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:158)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:144)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRegistered(AbstractChannelHandlerContext.java:137)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRegistered(DefaultChannelPipeline.java:1307)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:158)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:144)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:820)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:509)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:419)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:478)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.safeExecute(SingleThreadEventExecutor.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:418)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:401)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 11:34:49  [ main:0 ] - [ INFO ]  I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:8080: Software caused connection abort: recv failed
+2016-08-01 11:34:49  [ main:3 ] - [ INFO ]  Retrying request to {}->http://127.0.0.1:8080
+2016-08-01 11:34:49  [ nioEventLoopGroup-3-7:3641804 ] - [ WARN ]  Failed to initialize a channel. Closing: [id: 0xb40ef167, L:/127.0.0.1:8080 - R:/127.0.0.1:50570]
+java.lang.Error: Unresolved compilation problems: 
+	The import com.telek cannot be resolved
+	request cannot be resolved to a variable
+	request cannot be resolved
+	HTTP_1_1 cannot be resolved to a variable
+	OK cannot be resolved to a variable
+	CONTENT_TYPE cannot be resolved to a variable
+	CONTENT_LENGTH cannot be resolved to a variable
+	request cannot be resolved to a variable
+	CONNECTION cannot be resolved to a variable
+	Values cannot be resolved to a variable
+
+	at com.chm.hander.NettyServerHander.<init>(NettyServerHander.java:4)
+	at com.chm.server.NettyServerManager$1.initChannel(NettyServerManager.java:50)
+	at com.chm.server.NettyServerManager$1.initChannel(NettyServerManager.java:1)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:68)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:158)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:144)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRegistered(AbstractChannelHandlerContext.java:137)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRegistered(DefaultChannelPipeline.java:1307)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:158)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:144)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:820)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:509)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:419)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:478)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.safeExecute(SingleThreadEventExecutor.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:418)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:401)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 11:34:49  [ main:111 ] - [ INFO ]  I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://127.0.0.1:8080: The target server failed to respond
+2016-08-01 11:34:49  [ main:111 ] - [ INFO ]  Retrying request to {}->http://127.0.0.1:8080
+2016-08-01 11:34:49  [ nioEventLoopGroup-3-8:3641912 ] - [ WARN ]  Failed to initialize a channel. Closing: [id: 0xd144b053, L:/127.0.0.1:8080 - R:/127.0.0.1:50571]
+java.lang.Error: Unresolved compilation problems: 
+	The import com.telek cannot be resolved
+	request cannot be resolved to a variable
+	request cannot be resolved
+	HTTP_1_1 cannot be resolved to a variable
+	OK cannot be resolved to a variable
+	CONTENT_TYPE cannot be resolved to a variable
+	CONTENT_LENGTH cannot be resolved to a variable
+	request cannot be resolved to a variable
+	CONNECTION cannot be resolved to a variable
+	Values cannot be resolved to a variable
+
+	at com.chm.hander.NettyServerHander.<init>(NettyServerHander.java:4)
+	at com.chm.server.NettyServerManager$1.initChannel(NettyServerManager.java:50)
+	at com.chm.server.NettyServerManager$1.initChannel(NettyServerManager.java:1)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:68)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:158)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:144)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRegistered(AbstractChannelHandlerContext.java:137)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRegistered(DefaultChannelPipeline.java:1307)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:158)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:144)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:820)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:509)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:419)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:478)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.safeExecute(SingleThreadEventExecutor.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:418)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:401)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 11:34:49  [ main:219 ] - [ INFO ]  I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://127.0.0.1:8080: The target server failed to respond
+2016-08-01 11:34:49  [ main:220 ] - [ INFO ]  Retrying request to {}->http://127.0.0.1:8080
+2016-08-01 11:34:49  [ nioEventLoopGroup-3-1:3641921 ] - [ WARN ]  Failed to initialize a channel. Closing: [id: 0xe1769572, L:/127.0.0.1:8080 - R:/127.0.0.1:50572]
+java.lang.Error: Unresolved compilation problems: 
+	The import com.telek cannot be resolved
+	request cannot be resolved to a variable
+	request cannot be resolved
+	HTTP_1_1 cannot be resolved to a variable
+	OK cannot be resolved to a variable
+	CONTENT_TYPE cannot be resolved to a variable
+	CONTENT_LENGTH cannot be resolved to a variable
+	request cannot be resolved to a variable
+	CONNECTION cannot be resolved to a variable
+	Values cannot be resolved to a variable
+
+	at com.chm.hander.NettyServerHander.<init>(NettyServerHander.java:4)
+	at com.chm.server.NettyServerManager$1.initChannel(NettyServerManager.java:50)
+	at com.chm.server.NettyServerManager$1.initChannel(NettyServerManager.java:1)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:68)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:158)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:144)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRegistered(AbstractChannelHandlerContext.java:137)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRegistered(DefaultChannelPipeline.java:1307)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:158)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:144)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:820)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:509)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:419)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:478)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.safeExecute(SingleThreadEventExecutor.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:418)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:401)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 11:35:54  [ nioEventLoopGroup-3-2:3707506 ] - [ WARN ]  Failed to initialize a channel. Closing: [id: 0xbbc8d26e, L:/127.0.0.1:8080 - R:/127.0.0.1:50577]
+java.lang.Error: Unresolved compilation problems: 
+	The import com.telek cannot be resolved
+	request cannot be resolved to a variable
+	request cannot be resolved
+	HTTP_1_1 cannot be resolved to a variable
+	OK cannot be resolved to a variable
+	CONTENT_TYPE cannot be resolved to a variable
+	CONTENT_LENGTH cannot be resolved to a variable
+	request cannot be resolved to a variable
+	CONNECTION cannot be resolved to a variable
+	Values cannot be resolved to a variable
+
+	at com.chm.hander.NettyServerHander.<init>(NettyServerHander.java:4)
+	at com.chm.server.NettyServerManager$1.initChannel(NettyServerManager.java:50)
+	at com.chm.server.NettyServerManager$1.initChannel(NettyServerManager.java:1)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:68)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:158)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:144)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRegistered(AbstractChannelHandlerContext.java:137)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRegistered(DefaultChannelPipeline.java:1307)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:158)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:144)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:820)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:509)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:419)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:478)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.safeExecute(SingleThreadEventExecutor.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:418)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:401)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 11:35:54  [ main:0 ] - [ INFO ]  I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:8080: Software caused connection abort: recv failed
+2016-08-01 11:35:54  [ main:3 ] - [ INFO ]  Retrying request to {}->http://127.0.0.1:8080
+2016-08-01 11:35:54  [ nioEventLoopGroup-3-3:3707538 ] - [ WARN ]  Failed to initialize a channel. Closing: [id: 0x672b5ea2, L:/127.0.0.1:8080 - R:/127.0.0.1:50578]
+java.lang.Error: Unresolved compilation problems: 
+	The import com.telek cannot be resolved
+	request cannot be resolved to a variable
+	request cannot be resolved
+	HTTP_1_1 cannot be resolved to a variable
+	OK cannot be resolved to a variable
+	CONTENT_TYPE cannot be resolved to a variable
+	CONTENT_LENGTH cannot be resolved to a variable
+	request cannot be resolved to a variable
+	CONNECTION cannot be resolved to a variable
+	Values cannot be resolved to a variable
+
+	at com.chm.hander.NettyServerHander.<init>(NettyServerHander.java:4)
+	at com.chm.server.NettyServerManager$1.initChannel(NettyServerManager.java:50)
+	at com.chm.server.NettyServerManager$1.initChannel(NettyServerManager.java:1)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:68)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:158)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:144)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRegistered(AbstractChannelHandlerContext.java:137)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRegistered(DefaultChannelPipeline.java:1307)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:158)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:144)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:820)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:509)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:419)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:478)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.safeExecute(SingleThreadEventExecutor.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:418)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:401)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 11:35:54  [ main:9 ] - [ INFO ]  I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://127.0.0.1:8080: The target server failed to respond
+2016-08-01 11:35:54  [ main:10 ] - [ INFO ]  Retrying request to {}->http://127.0.0.1:8080
+2016-08-01 11:35:54  [ nioEventLoopGroup-3-4:3707544 ] - [ WARN ]  Failed to initialize a channel. Closing: [id: 0xd9cc0d6f, L:/127.0.0.1:8080 - R:/127.0.0.1:50579]
+java.lang.Error: Unresolved compilation problems: 
+	The import com.telek cannot be resolved
+	request cannot be resolved to a variable
+	request cannot be resolved
+	HTTP_1_1 cannot be resolved to a variable
+	OK cannot be resolved to a variable
+	CONTENT_TYPE cannot be resolved to a variable
+	CONTENT_LENGTH cannot be resolved to a variable
+	request cannot be resolved to a variable
+	CONNECTION cannot be resolved to a variable
+	Values cannot be resolved to a variable
+
+	at com.chm.hander.NettyServerHander.<init>(NettyServerHander.java:4)
+	at com.chm.server.NettyServerManager$1.initChannel(NettyServerManager.java:50)
+	at com.chm.server.NettyServerManager$1.initChannel(NettyServerManager.java:1)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:68)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:158)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:144)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRegistered(AbstractChannelHandlerContext.java:137)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRegistered(DefaultChannelPipeline.java:1307)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:158)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:144)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:820)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:509)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:419)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:478)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.safeExecute(SingleThreadEventExecutor.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:418)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:401)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 11:35:54  [ main:15 ] - [ INFO ]  I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://127.0.0.1:8080: The target server failed to respond
+2016-08-01 11:35:54  [ main:15 ] - [ INFO ]  Retrying request to {}->http://127.0.0.1:8080
+2016-08-01 11:35:54  [ nioEventLoopGroup-3-5:3707549 ] - [ WARN ]  Failed to initialize a channel. Closing: [id: 0x0ef49941, L:/127.0.0.1:8080 - R:/127.0.0.1:50580]
+java.lang.Error: Unresolved compilation problems: 
+	The import com.telek cannot be resolved
+	request cannot be resolved to a variable
+	request cannot be resolved
+	HTTP_1_1 cannot be resolved to a variable
+	OK cannot be resolved to a variable
+	CONTENT_TYPE cannot be resolved to a variable
+	CONTENT_LENGTH cannot be resolved to a variable
+	request cannot be resolved to a variable
+	CONNECTION cannot be resolved to a variable
+	Values cannot be resolved to a variable
+
+	at com.chm.hander.NettyServerHander.<init>(NettyServerHander.java:4)
+	at com.chm.server.NettyServerManager$1.initChannel(NettyServerManager.java:50)
+	at com.chm.server.NettyServerManager$1.initChannel(NettyServerManager.java:1)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:68)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:158)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:144)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRegistered(AbstractChannelHandlerContext.java:137)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRegistered(DefaultChannelPipeline.java:1307)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:158)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:144)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:820)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:509)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:419)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:478)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.safeExecute(SingleThreadEventExecutor.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:418)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:401)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 11:36:06  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 11:36:06 CST 2016]; root of context hierarchy
+2016-08-01 11:36:06  [ main:61 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 11:36:07  [ main:505 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 11:36:34  [ nioEventLoopGroup-3-1:27256 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 11:38:44  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 11:38:44 CST 2016]; root of context hierarchy
+2016-08-01 11:38:44  [ main:60 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 11:38:45  [ main:510 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 11:38:55  [ nioEventLoopGroup-3-1:10478 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 12:21:02  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 12:21:02 CST 2016]; root of context hierarchy
+2016-08-01 12:21:02  [ main:92 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 12:21:03  [ main:888 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 12:22:06  [ nioEventLoopGroup-3-1:64055 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 13:01:49  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 13:01:49 CST 2016]; root of context hierarchy
+2016-08-01 13:01:49  [ main:63 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 13:01:49  [ main:510 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 13:02:03  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 13:02:22  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 13:02:22 CST 2016]; root of context hierarchy
+2016-08-01 13:02:22  [ main:66 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 13:02:23  [ main:556 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 13:02:33  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 13:02:51  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 13:03:21  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 13:03:42  [ main:21362 ] - [ ERROR ]  Failed to submit a listener notification task. Event loop shut down?
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:840)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.offerTask(SingleThreadEventExecutor.java:342)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:335)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:765)
+	at io.netty.util.concurrent.DefaultPromise.safeExecute(DefaultPromise.java:767)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:435)
+	at io.netty.util.concurrent.DefaultPromise.setFailure(DefaultPromise.java:120)
+	at io.netty.channel.DefaultChannelPromise.setFailure(DefaultChannelPromise.java:87)
+	at io.netty.channel.AbstractChannelHandlerContext.safeExecute(AbstractChannelHandlerContext.java:1022)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:835)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:733)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:714)
+	at io.netty.channel.DefaultChannelPipeline.write(DefaultChannelPipeline.java:1017)
+	at io.netty.channel.AbstractChannel.write(AbstractChannel.java:286)
+	at com.chm.server.HttpClient.sendMessage(HttpClient.java:96)
+	at com.chm.ClientApp.main(ClientApp.java:20)
+2016-08-01 13:04:20  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 13:07:15  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 13:07:31  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 13:07:31 CST 2016]; root of context hierarchy
+2016-08-01 13:07:31  [ main:63 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 13:07:31  [ main:533 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 13:07:36  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 13:08:22  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 13:08:49  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 13:08:54  [ main:5805 ] - [ WARN ]  Force-closing a channel whose registration task was not accepted by an event loop: [id: 0x0305a6ec]
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:840)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.offerTask(SingleThreadEventExecutor.java:342)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:335)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:765)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register(AbstractChannel.java:475)
+	at io.netty.channel.SingleThreadEventLoop.register(SingleThreadEventLoop.java:80)
+	at io.netty.channel.SingleThreadEventLoop.register(SingleThreadEventLoop.java:74)
+	at io.netty.channel.MultithreadEventLoopGroup.register(MultithreadEventLoopGroup.java:85)
+	at io.netty.bootstrap.AbstractBootstrap.initAndRegister(AbstractBootstrap.java:330)
+	at io.netty.bootstrap.Bootstrap.doResolveAndConnect(Bootstrap.java:163)
+	at io.netty.bootstrap.Bootstrap.connect(Bootstrap.java:145)
+	at io.netty.bootstrap.Bootstrap.connect(Bootstrap.java:126)
+	at com.chm.server.HttpClient.connect(HttpClient.java:66)
+	at com.chm.ClientApp.main(ClientApp.java:19)
+2016-08-01 13:08:54  [ main:5811 ] - [ ERROR ]  Failed to submit a listener notification task. Event loop shut down?
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:840)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.offerTask(SingleThreadEventExecutor.java:342)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:335)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:765)
+	at io.netty.util.concurrent.DefaultPromise.safeExecute(DefaultPromise.java:767)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:435)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:111)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:82)
+	at io.netty.channel.AbstractChannel$CloseFuture.setClosed(AbstractChannel.java:1062)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register(AbstractChannel.java:486)
+	at io.netty.channel.SingleThreadEventLoop.register(SingleThreadEventLoop.java:80)
+	at io.netty.channel.SingleThreadEventLoop.register(SingleThreadEventLoop.java:74)
+	at io.netty.channel.MultithreadEventLoopGroup.register(MultithreadEventLoopGroup.java:85)
+	at io.netty.bootstrap.AbstractBootstrap.initAndRegister(AbstractBootstrap.java:330)
+	at io.netty.bootstrap.Bootstrap.doResolveAndConnect(Bootstrap.java:163)
+	at io.netty.bootstrap.Bootstrap.connect(Bootstrap.java:145)
+	at io.netty.bootstrap.Bootstrap.connect(Bootstrap.java:126)
+	at com.chm.server.HttpClient.connect(HttpClient.java:66)
+	at com.chm.ClientApp.main(ClientApp.java:19)
+2016-08-01 13:08:54  [ main:5813 ] - [ ERROR ]  Failed to submit a listener notification task. Event loop shut down?
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:840)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.offerTask(SingleThreadEventExecutor.java:342)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:335)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:765)
+	at io.netty.util.concurrent.DefaultPromise.safeExecute(DefaultPromise.java:767)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:435)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:129)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.safeSetFailure(AbstractChannel.java:906)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register(AbstractChannel.java:487)
+	at io.netty.channel.SingleThreadEventLoop.register(SingleThreadEventLoop.java:80)
+	at io.netty.channel.SingleThreadEventLoop.register(SingleThreadEventLoop.java:74)
+	at io.netty.channel.MultithreadEventLoopGroup.register(MultithreadEventLoopGroup.java:85)
+	at io.netty.bootstrap.AbstractBootstrap.initAndRegister(AbstractBootstrap.java:330)
+	at io.netty.bootstrap.Bootstrap.doResolveAndConnect(Bootstrap.java:163)
+	at io.netty.bootstrap.Bootstrap.connect(Bootstrap.java:145)
+	at io.netty.bootstrap.Bootstrap.connect(Bootstrap.java:126)
+	at com.chm.server.HttpClient.connect(HttpClient.java:66)
+	at com.chm.ClientApp.main(ClientApp.java:19)
+2016-08-01 13:09:17  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 13:09:33  [ main:15407 ] - [ WARN ]  Force-closing a channel whose registration task was not accepted by an event loop: [id: 0x61dc64f8]
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:840)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.offerTask(SingleThreadEventExecutor.java:342)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:335)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:765)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register(AbstractChannel.java:475)
+	at io.netty.channel.SingleThreadEventLoop.register(SingleThreadEventLoop.java:80)
+	at io.netty.channel.SingleThreadEventLoop.register(SingleThreadEventLoop.java:74)
+	at io.netty.channel.MultithreadEventLoopGroup.register(MultithreadEventLoopGroup.java:85)
+	at io.netty.bootstrap.AbstractBootstrap.initAndRegister(AbstractBootstrap.java:330)
+	at io.netty.bootstrap.Bootstrap.doResolveAndConnect(Bootstrap.java:163)
+	at io.netty.bootstrap.Bootstrap.connect(Bootstrap.java:145)
+	at io.netty.bootstrap.Bootstrap.connect(Bootstrap.java:126)
+	at com.chm.server.HttpClient.connect(HttpClient.java:66)
+	at com.chm.ClientApp.main(ClientApp.java:19)
+2016-08-01 13:09:33  [ main:15413 ] - [ ERROR ]  Failed to submit a listener notification task. Event loop shut down?
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:840)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.offerTask(SingleThreadEventExecutor.java:342)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:335)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:765)
+	at io.netty.util.concurrent.DefaultPromise.safeExecute(DefaultPromise.java:767)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:435)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:111)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:82)
+	at io.netty.channel.AbstractChannel$CloseFuture.setClosed(AbstractChannel.java:1062)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register(AbstractChannel.java:486)
+	at io.netty.channel.SingleThreadEventLoop.register(SingleThreadEventLoop.java:80)
+	at io.netty.channel.SingleThreadEventLoop.register(SingleThreadEventLoop.java:74)
+	at io.netty.channel.MultithreadEventLoopGroup.register(MultithreadEventLoopGroup.java:85)
+	at io.netty.bootstrap.AbstractBootstrap.initAndRegister(AbstractBootstrap.java:330)
+	at io.netty.bootstrap.Bootstrap.doResolveAndConnect(Bootstrap.java:163)
+	at io.netty.bootstrap.Bootstrap.connect(Bootstrap.java:145)
+	at io.netty.bootstrap.Bootstrap.connect(Bootstrap.java:126)
+	at com.chm.server.HttpClient.connect(HttpClient.java:66)
+	at com.chm.ClientApp.main(ClientApp.java:19)
+2016-08-01 13:09:33  [ main:15415 ] - [ ERROR ]  Failed to submit a listener notification task. Event loop shut down?
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:840)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.offerTask(SingleThreadEventExecutor.java:342)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:335)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:765)
+	at io.netty.util.concurrent.DefaultPromise.safeExecute(DefaultPromise.java:767)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:435)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:129)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.safeSetFailure(AbstractChannel.java:906)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register(AbstractChannel.java:487)
+	at io.netty.channel.SingleThreadEventLoop.register(SingleThreadEventLoop.java:80)
+	at io.netty.channel.SingleThreadEventLoop.register(SingleThreadEventLoop.java:74)
+	at io.netty.channel.MultithreadEventLoopGroup.register(MultithreadEventLoopGroup.java:85)
+	at io.netty.bootstrap.AbstractBootstrap.initAndRegister(AbstractBootstrap.java:330)
+	at io.netty.bootstrap.Bootstrap.doResolveAndConnect(Bootstrap.java:163)
+	at io.netty.bootstrap.Bootstrap.connect(Bootstrap.java:145)
+	at io.netty.bootstrap.Bootstrap.connect(Bootstrap.java:126)
+	at com.chm.server.HttpClient.connect(HttpClient.java:66)
+	at com.chm.ClientApp.main(ClientApp.java:19)
+2016-08-01 13:11:28  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 13:14:24  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 13:14:58  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 13:15:09  [ nioEventLoopGroup-3-1:457567 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 13:15:17  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 13:15:17 CST 2016]; root of context hierarchy
+2016-08-01 13:15:17  [ main:65 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 13:15:18  [ main:522 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 13:15:35  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 13:16:31  [ nioEventLoopGroup-3-1:73527 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 13:16:38  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 13:16:38 CST 2016]; root of context hierarchy
+2016-08-01 13:16:39  [ main:57 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 13:16:39  [ main:507 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 13:16:47  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 13:17:09  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 13:17:28  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 13:18:48  [ main:80090 ] - [ ERROR ]  Failed to submit a listener notification task. Event loop shut down?
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:840)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.offerTask(SingleThreadEventExecutor.java:342)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:335)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:765)
+	at io.netty.util.concurrent.DefaultPromise.safeExecute(DefaultPromise.java:767)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:435)
+	at io.netty.util.concurrent.DefaultPromise.setFailure(DefaultPromise.java:120)
+	at io.netty.channel.DefaultChannelPromise.setFailure(DefaultChannelPromise.java:87)
+	at io.netty.channel.AbstractChannelHandlerContext.safeExecute(AbstractChannelHandlerContext.java:1022)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:835)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:733)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:714)
+	at io.netty.channel.DefaultChannelPipeline.write(DefaultChannelPipeline.java:1017)
+	at io.netty.channel.AbstractChannel.write(AbstractChannel.java:286)
+	at com.chm.server.HttpClient.sendMessage(HttpClient.java:71)
+	at com.chm.ClientApp.main(ClientApp.java:20)
+2016-08-01 13:18:59  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 13:19:03  [ main:4202 ] - [ ERROR ]  Failed to submit a listener notification task. Event loop shut down?
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:840)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.offerTask(SingleThreadEventExecutor.java:342)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:335)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:765)
+	at io.netty.util.concurrent.DefaultPromise.safeExecute(DefaultPromise.java:767)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:435)
+	at io.netty.util.concurrent.DefaultPromise.setFailure(DefaultPromise.java:120)
+	at io.netty.channel.DefaultChannelPromise.setFailure(DefaultChannelPromise.java:87)
+	at io.netty.channel.AbstractChannelHandlerContext.safeExecute(AbstractChannelHandlerContext.java:1022)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:835)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:733)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:714)
+	at io.netty.channel.DefaultChannelPipeline.write(DefaultChannelPipeline.java:1017)
+	at io.netty.channel.AbstractChannel.write(AbstractChannel.java:286)
+	at com.chm.server.HttpClient.sendMessage(HttpClient.java:71)
+	at com.chm.ClientApp.main(ClientApp.java:20)
+2016-08-01 13:19:21  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 13:19:57  [ main:36016 ] - [ ERROR ]  Failed to submit a listener notification task. Event loop shut down?
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:840)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.offerTask(SingleThreadEventExecutor.java:342)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:335)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:765)
+	at io.netty.util.concurrent.DefaultPromise.safeExecute(DefaultPromise.java:767)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:435)
+	at io.netty.util.concurrent.DefaultPromise.setFailure(DefaultPromise.java:120)
+	at io.netty.channel.DefaultChannelPromise.setFailure(DefaultChannelPromise.java:87)
+	at io.netty.channel.AbstractChannelHandlerContext.safeExecute(AbstractChannelHandlerContext.java:1022)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:835)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:733)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:714)
+	at io.netty.channel.DefaultChannelPipeline.write(DefaultChannelPipeline.java:1017)
+	at io.netty.channel.AbstractChannel.write(AbstractChannel.java:286)
+	at com.chm.server.HttpClient.sendMessage(HttpClient.java:71)
+	at com.chm.ClientApp.main(ClientApp.java:20)
+2016-08-01 13:23:12  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 13:23:15  [ main:3297 ] - [ ERROR ]  Failed to submit a listener notification task. Event loop shut down?
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:840)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.offerTask(SingleThreadEventExecutor.java:342)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:335)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:765)
+	at io.netty.util.concurrent.DefaultPromise.safeExecute(DefaultPromise.java:767)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:435)
+	at io.netty.util.concurrent.DefaultPromise.setFailure(DefaultPromise.java:120)
+	at io.netty.channel.DefaultChannelPromise.setFailure(DefaultChannelPromise.java:87)
+	at io.netty.channel.AbstractChannelHandlerContext.safeExecute(AbstractChannelHandlerContext.java:1022)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:835)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:733)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:714)
+	at io.netty.channel.DefaultChannelPipeline.write(DefaultChannelPipeline.java:1017)
+	at io.netty.channel.AbstractChannel.write(AbstractChannel.java:286)
+	at com.chm.server.HttpClient.sendMessage(HttpClient.java:71)
+	at com.chm.ClientApp.main(ClientApp.java:20)
+2016-08-01 13:50:25  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 13:50:41  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 13:50:41 CST 2016]; root of context hierarchy
+2016-08-01 13:50:41  [ main:63 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 13:50:42  [ main:514 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 13:50:50  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 13:55:03  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 13:57:34  [ main:1 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 13:57:34 CST 2016]; root of context hierarchy
+2016-08-01 13:57:34  [ main:66 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 13:57:34  [ main:551 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 13:58:24  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 13:59:00  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 14:06:54  [ main:1 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 14:06:54 CST 2016]; root of context hierarchy
+2016-08-01 14:06:54  [ main:64 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 14:06:54  [ main:515 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 14:07:00  [ nioEventLoopGroup-3-1:6651 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 14:19:08  [ nioEventLoopGroup-3-2:733926 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 14:19:17  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 14:19:17 CST 2016]; root of context hierarchy
+2016-08-01 14:19:17  [ main:62 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 14:19:18  [ main:542 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 14:19:22  [ nioEventLoopGroup-3-1:5333 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 14:25:31  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 14:25:31 CST 2016]; root of context hierarchy
+2016-08-01 14:25:31  [ main:60 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 14:25:31  [ main:527 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 14:26:06  [ nioEventLoopGroup-3-2:35137 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 14:26:25  [ nioEventLoopGroup-3-3:54684 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 14:26:46  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 14:26:46 CST 2016]; root of context hierarchy
+2016-08-01 14:26:46  [ main:69 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 14:26:47  [ main:568 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 14:27:42  [ nioEventLoopGroup-3-1:56111 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 14:27:59  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 14:27:59 CST 2016]; root of context hierarchy
+2016-08-01 14:27:59  [ main:66 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 14:28:00  [ main:535 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 14:30:05  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 14:30:05 CST 2016]; root of context hierarchy
+2016-08-01 14:30:05  [ main:72 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 14:30:05  [ main:599 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 14:32:04  [ nioEventLoopGroup-3-2:119789 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 14:32:12  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 14:32:12 CST 2016]; root of context hierarchy
+2016-08-01 14:32:12  [ main:62 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 14:32:13  [ main:513 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 14:32:26  [ nioEventLoopGroup-3-1:14010 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 14:34:29  [ nioEventLoopGroup-3-3:137209 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 14:34:53  [ nioEventLoopGroup-3-2:160467 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 14:35:37  [ nioEventLoopGroup-3-4:204786 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 14:36:52  [ nioEventLoopGroup-3-5:280055 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 14:51:47  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 14:51:47 CST 2016]; root of context hierarchy
+2016-08-01 14:51:47  [ main:59 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 14:51:47  [ main:524 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 14:51:56  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 14:51:56 CST 2016]; root of context hierarchy
+2016-08-01 14:51:56  [ main:63 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 14:51:56  [ main:521 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 14:56:02  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 14:56:02 CST 2016]; root of context hierarchy
+2016-08-01 14:56:02  [ main:60 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 14:56:02  [ main:517 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 15:04:11  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 15:04:11 CST 2016]; root of context hierarchy
+2016-08-01 15:04:11  [ main:63 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 15:04:11  [ main:517 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 15:07:52  [ nioEventLoopGroup-3-1:221703 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 15:15:22  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 15:15:22 CST 2016]; root of context hierarchy
+2016-08-01 15:15:22  [ main:60 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 15:15:23  [ main:523 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 15:15:26  [ nioEventLoopGroup-3-1:3844 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.codec.http.multipart.HttpPostRequestDecoder$NotEnoughDataDecoderException
+	at io.netty.handler.codec.http.multipart.HttpPostStandardRequestDecoder.getBodyHttpDatas(HttpPostStandardRequestDecoder.java:224)
+	at io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.getBodyHttpDatas(HttpPostRequestDecoder.java:213)
+	at com.chm.server.RequestParser.parse(RequestParser.java:57)
+	at com.chm.hander.NettyServerHander.channelRead(NettyServerHander.java:35)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:350)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:350)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:926)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 15:16:37  [ nioEventLoopGroup-3-2:74244 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.codec.http.multipart.HttpPostRequestDecoder$NotEnoughDataDecoderException
+	at io.netty.handler.codec.http.multipart.HttpPostStandardRequestDecoder.getBodyHttpDatas(HttpPostStandardRequestDecoder.java:224)
+	at io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.getBodyHttpDatas(HttpPostRequestDecoder.java:213)
+	at com.chm.server.RequestParser.parse(RequestParser.java:57)
+	at com.chm.hander.NettyServerHander.channelRead(NettyServerHander.java:35)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:350)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:350)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:926)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 15:25:29  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 15:25:29 CST 2016]; root of context hierarchy
+2016-08-01 15:25:29  [ main:62 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 15:25:29  [ main:539 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 15:25:33  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 15:25:33 CST 2016]; root of context hierarchy
+2016-08-01 15:25:33  [ main:58 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 15:25:33  [ main:505 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 15:32:21  [ nioEventLoopGroup-3-5:412364 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.ClassCastException: io.netty.handler.codec.http.LastHttpContent$1 cannot be cast to io.netty.handler.codec.http.FullHttpRequest
+	at com.chm.hander.NettyServerHander.channelRead(NettyServerHander.java:31)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:350)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:350)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:926)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 15:32:59  [ nioEventLoopGroup-3-6:450252 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.ClassCastException: io.netty.handler.codec.http.LastHttpContent$1 cannot be cast to io.netty.handler.codec.http.FullHttpRequest
+	at com.chm.hander.NettyServerHander.channelRead(NettyServerHander.java:31)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:350)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:350)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:926)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 15:40:04  [ nioEventLoopGroup-3-7:874889 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.ClassCastException: io.netty.handler.codec.http.DefaultHttpRequest cannot be cast to io.netty.handler.codec.http.FullHttpRequest
+	at com.chm.hander.NettyServerHander.channelRead(NettyServerHander.java:31)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:350)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:350)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:926)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 15:44:37  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 15:44:37 CST 2016]; root of context hierarchy
+2016-08-01 15:44:37  [ main:71 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 15:44:38  [ main:556 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 15:44:45  [ nioEventLoopGroup-3-1:8354 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.codec.http.multipart.HttpPostRequestDecoder$NotEnoughDataDecoderException
+	at io.netty.handler.codec.http.multipart.HttpPostStandardRequestDecoder.getBodyHttpDatas(HttpPostStandardRequestDecoder.java:224)
+	at io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.getBodyHttpDatas(HttpPostRequestDecoder.java:213)
+	at com.chm.server.RequestParser.parse(RequestParser.java:55)
+	at com.chm.hander.NettyServerHander.channelRead(NettyServerHander.java:36)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:350)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:350)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:926)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 15:56:19  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 15:56:19 CST 2016]; root of context hierarchy
+2016-08-01 15:56:20  [ main:57 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 15:56:20  [ main:581 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 15:59:41  [ nioEventLoopGroup-3-1:201232 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 15:59:47  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 15:59:47 CST 2016]; root of context hierarchy
+2016-08-01 15:59:47  [ main:60 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 15:59:47  [ main:516 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 15:59:51  [ nioEventLoopGroup-3-1:4181 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 16:00:32  [ nioEventLoopGroup-3-2:44808 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.ClassCastException: io.netty.handler.codec.http.LastHttpContent$1 cannot be cast to io.netty.handler.codec.http.HttpRequest
+	at com.chm.hander.NettyServerHander.channelRead(NettyServerHander.java:38)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:350)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:350)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:926)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 16:00:32  [ nioEventLoopGroup-3-2:44839 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 16:00:47  [ nioEventLoopGroup-3-3:60621 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.ClassCastException: io.netty.handler.codec.http.LastHttpContent$1 cannot be cast to io.netty.handler.codec.http.HttpRequest
+	at com.chm.hander.NettyServerHander.channelRead(NettyServerHander.java:38)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:350)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:350)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:926)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 16:00:47  [ nioEventLoopGroup-3-3:60656 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 16:03:03  [ nioEventLoopGroup-3-4:195845 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.ClassCastException: io.netty.handler.codec.http.LastHttpContent$1 cannot be cast to io.netty.handler.codec.http.HttpRequest
+	at com.chm.hander.NettyServerHander.channelRead(NettyServerHander.java:40)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:350)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:350)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:926)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 16:03:03  [ nioEventLoopGroup-3-4:195881 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 16:03:23  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 16:03:23 CST 2016]; root of context hierarchy
+2016-08-01 16:03:23  [ main:61 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 16:03:23  [ main:533 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 16:03:29  [ nioEventLoopGroup-3-1:6179 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.ClassCastException: io.netty.handler.codec.http.LastHttpContent$1 cannot be cast to io.netty.handler.codec.http.HttpRequest
+	at com.chm.hander.NettyServerHander.channelRead(NettyServerHander.java:40)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:350)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:350)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:358)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:926)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 16:03:29  [ nioEventLoopGroup-3-1:6211 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 16:04:18  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 16:04:18 CST 2016]; root of context hierarchy
+2016-08-01 16:04:18  [ main:57 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 16:04:18  [ main:542 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 16:14:07  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 16:14:07 CST 2016]; root of context hierarchy
+2016-08-01 16:14:07  [ main:58 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 16:14:07  [ main:530 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 16:15:50  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 16:15:50 CST 2016]; root of context hierarchy
+2016-08-01 16:15:50  [ main:61 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 16:15:50  [ main:602 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 16:15:55  [ nioEventLoopGroup-3-1:5313 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 16:16:14  [ nioEventLoopGroup-3-2:24729 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 16:22:02  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 16:22:02 CST 2016]; root of context hierarchy
+2016-08-01 16:22:02  [ main:59 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 16:22:03  [ main:535 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 17:47:52  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 17:47:52 CST 2016]; root of context hierarchy
+2016-08-01 17:47:52  [ main:72 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 17:47:52  [ main:600 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 18:11:18  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 18:11:18 CST 2016]; root of context hierarchy
+2016-08-01 18:11:18  [ main:59 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 18:11:19  [ main:515 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 18:20:46  [ nioEventLoopGroup-3-3:567603 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 18:21:00  [ nioEventLoopGroup-3-4:581568 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 18:21:40  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 18:24:21  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 18:24:21 CST 2016]; root of context hierarchy
+2016-08-01 18:24:21  [ main:59 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 18:24:21  [ main:521 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 18:24:26  [ nioEventLoopGroup-3-1:5011 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-01 18:27:03  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 18:27:03 CST 2016]; root of context hierarchy
+2016-08-01 18:27:03  [ main:70 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 18:27:04  [ main:533 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 18:28:32  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 18:28:32 CST 2016]; root of context hierarchy
+2016-08-01 18:28:32  [ main:64 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 18:28:33  [ main:533 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 18:30:22  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 18:30:22 CST 2016]; root of context hierarchy
+2016-08-01 18:30:23  [ main:59 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 18:30:23  [ main:524 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 19:10:12  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 19:10:22  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 19:10:22 CST 2016]; root of context hierarchy
+2016-08-01 19:10:22  [ main:64 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 19:10:22  [ main:558 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 19:10:27  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 19:11:04  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 19:11:04 CST 2016]; root of context hierarchy
+2016-08-01 19:11:04  [ main:62 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 19:11:04  [ main:547 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 19:11:43  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 19:13:18  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 19:14:01  [ main:1 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 19:14:25  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 19:14:40  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 19:14:40 CST 2016]; root of context hierarchy
+2016-08-01 19:14:40  [ main:61 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 19:14:40  [ main:541 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 19:14:54  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 19:15:06  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 19:15:06 CST 2016]; root of context hierarchy
+2016-08-01 19:15:07  [ main:64 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 19:15:07  [ main:553 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 19:15:19  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 19:15:19 CST 2016]; root of context hierarchy
+2016-08-01 19:15:19  [ main:69 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 19:15:20  [ main:557 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 19:15:27  [ main:1 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 19:17:38  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 19:19:20  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 19:19:20 CST 2016]; root of context hierarchy
+2016-08-01 19:19:20  [ main:58 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 19:19:20  [ main:516 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-08-01 19:19:28  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 19:20:32  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 19:20:32 CST 2016]; root of context hierarchy
+2016-08-01 19:20:32  [ main:57 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 19:20:32  [ main:532 ] - [ INFO ]  启动netty服务器。。。,port={8846}
+2016-08-01 19:20:49  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@cb644e: startup date [Mon Aug 01 19:20:49 CST 2016]; root of context hierarchy
+2016-08-01 19:20:49  [ main:59 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-08-01 19:20:50  [ main:522 ] - [ INFO ]  启动netty服务器。。。,port={8847}
+2016-08-01 19:21:05  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 19:21:46  [ main:0 ] - [ INFO ]  初始化netty客服端。。。
+2016-08-01 19:26:23  [ main:0 ] - [ INFO ]  初始化netty客服端。。。

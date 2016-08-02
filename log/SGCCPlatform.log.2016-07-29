@@ -1,0 +1,78 @@
+2016-07-29 16:29:01  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@27c20538: startup date [Fri Jul 29 16:29:01 CST 2016]; root of context hierarchy
+2016-07-29 16:29:01  [ main:63 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-07-29 16:29:05  [ main:3257 ] - [ INFO ]  启动netty服务器。。。,port={8181}
+2016-07-29 16:30:24  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@27c20538: startup date [Fri Jul 29 16:30:24 CST 2016]; root of context hierarchy
+2016-07-29 16:30:24  [ main:77 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-07-29 16:30:27  [ main:3661 ] - [ INFO ]  启动netty服务器。。。,port={8181}
+2016-07-29 16:31:23  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@27c20538: startup date [Fri Jul 29 16:31:23 CST 2016]; root of context hierarchy
+2016-07-29 16:31:23  [ main:64 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-07-29 16:31:24  [ main:529 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-07-29 16:44:31  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@27c20538: startup date [Fri Jul 29 16:44:31 CST 2016]; root of context hierarchy
+2016-07-29 16:44:31  [ main:71 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-07-29 16:44:31  [ main:514 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-07-29 16:52:03  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@27c20538: startup date [Fri Jul 29 16:52:03 CST 2016]; root of context hierarchy
+2016-07-29 16:52:03  [ main:66 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-07-29 16:52:03  [ main:517 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-07-29 16:52:11  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@27c20538: startup date [Fri Jul 29 16:52:11 CST 2016]; root of context hierarchy
+2016-07-29 16:52:11  [ main:60 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-07-29 16:52:12  [ main:506 ] - [ INFO ]  启动netty客服端。。。,port={8080}
+2016-07-29 16:53:16  [ nioEventLoopGroup-3-1:73292 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-29 16:53:32  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@27c20538: startup date [Fri Jul 29 16:53:32 CST 2016]; root of context hierarchy
+2016-07-29 16:53:32  [ main:60 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-07-29 16:53:33  [ main:520 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-07-29 16:53:43  [ main:1 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@27c20538: startup date [Fri Jul 29 16:53:43 CST 2016]; root of context hierarchy
+2016-07-29 16:53:43  [ main:63 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-07-29 16:53:43  [ main:514 ] - [ INFO ]  启动netty客服端。。。,port={8080}
+2016-07-29 16:53:53  [ nioEventLoopGroup-3-2:110340 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:349)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:571)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:512)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:426)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:398)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:877)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-29 16:54:11  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@27c20538: startup date [Fri Jul 29 16:54:11 CST 2016]; root of context hierarchy
+2016-07-29 16:54:11  [ main:59 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-07-29 16:54:12  [ main:517 ] - [ INFO ]  启动netty客服端。。。,port={8080}
+2016-07-29 16:57:21  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@27c20538: startup date [Fri Jul 29 16:57:21 CST 2016]; root of context hierarchy
+2016-07-29 16:57:21  [ main:68 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-07-29 16:57:22  [ main:547 ] - [ INFO ]  启动netty服务器。。。,port={8080}
+2016-07-29 16:57:27  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@27c20538: startup date [Fri Jul 29 16:57:27 CST 2016]; root of context hierarchy
+2016-07-29 16:57:27  [ main:58 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-07-29 16:57:27  [ main:513 ] - [ INFO ]  启动netty客服端。。。,port={8080}
+2016-07-29 16:59:35  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@27c20538: startup date [Fri Jul 29 16:59:35 CST 2016]; root of context hierarchy
+2016-07-29 16:59:35  [ main:59 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-07-29 16:59:35  [ main:513 ] - [ INFO ]  启动netty客服端。。。,port={8080}
+2016-07-29 17:00:37  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@27c20538: startup date [Fri Jul 29 17:00:37 CST 2016]; root of context hierarchy
+2016-07-29 17:00:37  [ main:61 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-07-29 17:00:37  [ main:615 ] - [ INFO ]  启动netty客服端。。。,port={8080}
+2016-07-29 17:06:06  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@27c20538: startup date [Fri Jul 29 17:06:06 CST 2016]; root of context hierarchy
+2016-07-29 17:06:06  [ main:61 ] - [ INFO ]  Loading XML bean definitions from file [H:\Eclipse\WorkSpace\demo\target\classes\spring\applicationContext.xml]
+2016-07-29 17:06:07  [ main:518 ] - [ INFO ]  启动netty客服端。。。,port={8080}
