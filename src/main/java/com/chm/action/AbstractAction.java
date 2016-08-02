@@ -32,7 +32,6 @@ public abstract class AbstractAction {
 			try {
 				buildAction(this);
 			} catch (UrlException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
@@ -43,7 +42,7 @@ public abstract class AbstractAction {
 	 * @param baseAction
 	 * @throws UrlException 
 	 */
-	private void buildAction(AbstractAction baseAction) throws UrlException{
+	private void buildAction(Object baseAction) throws UrlException{
 		
 		RequestMapping claRequestMapping = this.getClass().getAnnotation(RequestMapping.class);
 		

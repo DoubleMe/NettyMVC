@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.core.LocalVariableTableParameterNameDiscoverer;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -60,7 +61,7 @@ public class ParameterManagerImpl implements ParameterManager{
 		methodParameter.setParameterType(clazz);
 		methodParameter.setParameterName(parameterName);
 //		methodParameter.setParameterIndex(parameter.);
-		if(!BeanUtil.isBasicTypes(clazz)){
+		if(!BeanUtil.isNofieldType(clazz)){
 			methodParameter.setMethodParameters(buildMethodParameter(parameter.getType(),1));
 		}
 		return methodParameter;
@@ -84,7 +85,7 @@ public class ParameterManagerImpl implements ParameterManager{
 			methodParameters[index].setParameterName(field.getName());
 			methodParameters[index].setParameterAnnotations(field.getAnnotations());
 			methodParameters[index].setParameterType(field.getType());
-			if(!BeanUtil.isBasicTypes(field.getType())){
+			if(!BeanUtil.isNofieldType(field.getType())){
 				methodParameters[index].setMethodParameters(buildMethodParameter(field.getType(),++level));
 			}
 		}
@@ -171,40 +172,23 @@ public class ParameterManagerImpl implements ParameterManager{
 			return obj;
 		}
 		for(MethodParameter parameter : methodParameters){
-			//获取对应的set方法
-			String methodName = getSetMethodName(parameter.getParameterName());
-			try {
-				Class<?> clazz = parameter.getParameterType();
-				
-				Method method = obj.getClass().getMethod(methodName, clazz);
-				Object parameterValue = null;
-				if(!BeanUtil.isBasicTypes(clazz)){
-					Object param = clazz.newInstance();
-					parameterValue = getObject(param, parameter.getMethodParameters());
-				}else{
-					parameterValue = parameter.getParameterValue();
-				}
-				method.invoke(obj, parameterValue);
-			  
-			} catch (NoSuchMethodException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (SecurityException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (IllegalAccessException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (IllegalArgumentException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (InvocationTargetException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (InstantiationException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+			if(parameter.getParameterValue() == null && parameter.getMethodParameters() == null){
+				continue;
 			}
+			if(BeanUtil.isPrimitive(parameter.getParameterType())){
+				BeanUtil.setProperty(obj,parameter.getParameterName(),parameter.getParameterValue());	
+			}else{
+				try {
+					Object paramObj = parameter.getParameterType().newInstance();
+					BeanUtil.setProperty(obj,parameter.getParameterName(),getObject(paramObj,parameter.getMethodParameters()));	
+					
+				} catch (InstantiationException e) {
+					e.printStackTrace();
+				} catch (IllegalAccessException e) {
+					e.printStackTrace();
+				}
+			}
+			
 		}
 		
 		return obj;
@@ -219,7 +203,7 @@ public class ParameterManagerImpl implements ParameterManager{
 		try {
 			Object obj = methodParameter.getParameterType().newInstance();
 			
-			if(BeanUtil.isBasicTypes(methodParameter.getParameterType())){
+			if(BeanUtil.isNofieldType(methodParameter.getParameterType())){
 				obj = methodParameter.getParameterValue();
 			}else{//不是基本类型。并且有字段,调用反射将值注入
 				getObject(obj, methodParameter.getMethodParameters());
@@ -240,12 +224,6 @@ public class ParameterManagerImpl implements ParameterManager{
 		} 
 		
 		return null;
-	}
-	private String getSetMethodName(String parameterName){
-		String first = parameterName.substring(0,1);
-		String temp = parameterName.replaceFirst(first,first.toUpperCase());
-		
-		return "set"+temp;
 	}
 	
 	public static void main(String[] args) throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, IntrospectionException {
